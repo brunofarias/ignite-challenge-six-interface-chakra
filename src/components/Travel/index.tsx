@@ -1,25 +1,36 @@
-import { Flex, HStack, Box } from '@chakra-ui/react';
+import { Flex, Grid, Box, GridItem } from '@chakra-ui/react';
+import React from 'react';
 import Types from './Types';
 
 export default function Travel() {
   return (
     <Flex direction="column" justify="center" align="center">
-      <HStack
+      <Grid
+        templateColumns={["1fr 1fr", "1fr 1fr", "1fr 1fr", "repeat(5, 1fr)"]}
+        justifyContent="space-between"
         w="100%"
-        justify="space-between"
         maxW={1160}
-        my={20}
-        mx="auto"
+        my={[9, 20]}
+        gap={[1, 5]}
       >
-        <Types icon="cocktail" text="vida noturna" />
-        <Types icon="surf" text="praias" />
+        <GridItem>
+          <Types icon="cocktail" text="vida noturna" />
+        </GridItem>
+        <GridItem>
+          <Types icon="surf" text="praias" />
+        </GridItem>
         <Types icon="building" text="moderno" />
-        <Types icon="museum" text="clássico" />
-        <Types icon="earth" text="e mais..." />
-      </HStack>
+        <GridItem>
+          <Types icon="museum" text="clássico" />
+        </GridItem>
+        <GridItem colSpan={[2, 2, 2, 1]}>
+          <Types icon="earth" text="e mais..." />
+        </GridItem>
 
-      <Box        
-        w="90px"
+      </Grid>
+
+      <Box
+        w={["60px", "90px"]}
         borderBottom="2px"
         borderColor="gray.900"
       />

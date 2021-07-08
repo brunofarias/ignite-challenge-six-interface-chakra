@@ -3,18 +3,18 @@ import { RiInformationLine } from 'react-icons/ri'
 
 export default function Infos() {
   return (
-    <HStack spacing="10">
-      <Flex align={["flex-start", "center"]} direction="column">
+    <HStack justify="space-between">
+      <Flex align={["flex-start", "flex-start", "center"]} direction="column">
         <Heading fontSize={["2xl", "5xl"]} fontWeight="600" color="yellow.900">50</Heading>
-        <Text fontSize={["md", "2xl"]} fontWeight="600">países</Text>
+        <Text fontSize={["md", "md", "xl", "2xl"]} fontWeight="600">países</Text>
       </Flex>
-      <Flex align={["flex-start", "center"]} direction="column">
+      <Flex align={["flex-start", "flex-start", "center"]} direction="column">
         <Heading fontSize={["2xl", "5xl"]} fontWeight="600" color="yellow.900">60</Heading>
-        <Text fontSize={["md", "2xl"]} fontWeight="600">línguas</Text>
+        <Text fontSize={["md", "md", "xl", "2xl"]} fontWeight="600">línguas</Text>
       </Flex>
-      <Flex align={["flex-start", "center"]} direction="column">
+      <Flex align={["flex-start", "flex-start", "center"]} direction="column">
         <Heading fontSize={["2xl", "5xl"]} fontWeight="600" color="yellow.900">27</Heading>
-        <Text fontSize={["md", "2xl"]} fontWeight="600">
+        <Text fontSize={["md", "md", "xl", "2xl"]} fontWeight="600">
           cidades +100
           <Popover>
             <PopoverTrigger>

@@ -5,13 +5,13 @@ export default function Banner() {
     <Flex
       justify="center"
       w="100%"
-      h={["250px", "335px"]}
+      h={["165px", "335px"]}
       bgImage="url('/banner.jpg')"
-      bgPosition="100% 30%"
+      bgPosition={["100% 10%", "100% 0%", "100% 25%"]}
       bgRepeat="no-repeat"
       bgSize="cover"
     >
-      <Flex justify={['center', 'space-between']} align="center" w="100%" maxW={1160}>
+      <Flex justify={['center', 'space-between']} align="center" w="100%" maxW={1160} px={4}>
         <Flex maxW={["100%", "550px"]} direction="column">
           <Heading color="gray.100" fontWeight="500" fontSize={["xl", "2xl", "4xl"]}>
             5 continentes,<br />infinitas possibilidades.
@@ -21,7 +21,7 @@ export default function Banner() {
           </Text>
         </Flex>
         <Image
-          display={["none", "block"]}
+          display={["none", "none", "block"]}
           w={["300px", "430px"]}
           src="/airplane.svg"
           alt="Avião amarelo voando com algumas nuvens ao redor."

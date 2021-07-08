@@ -11,7 +11,7 @@ SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 export default function Slider() {
   return (
-    <Flex w="100%" h="450px" maxW={1240} mx="auto" mb={["5", "10"]}>
+    <Flex w="100%" h={["250px", "450px"]} maxW={1240} mx="auto" mb={["5", "10"]}>
       <Swiper
         className="mySwiper"        
         slidesPerView={1}

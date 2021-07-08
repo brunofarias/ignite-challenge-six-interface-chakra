@@ -16,10 +16,10 @@ export default function Continent() {
 
       <Flex
         direction="column"
-        w="100%"
         maxW="1160"
         mx="auto"
         mt={20}
+        px="1rem"
       >
 
         <Content />

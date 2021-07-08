@@ -4,7 +4,6 @@ export default function City() {
   return (
     <Flex
       direction="column"
-      w="256px"
       mt={[5, 10]}
       borderRadius="4px"
       overflow="hidden"
